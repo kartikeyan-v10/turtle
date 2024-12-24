@@ -3,21 +3,33 @@
 
 
     <ros2_control name="GazeboSystem" type="system">
-        <hardware>
-            <plugin>gazebo_ros2_control/GazeboSystem</plugin>
-        </hardware>
+        
+        <!-- <xacro:if value = "$(arg is_sim)">
+            <hardware>
+                <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+            </hardware>    
+        </xacro:if>
+       
+        <xacro:unless>
+            <hardware>
+                <plugin>$(find serial_brandi)/serial_brandi/TurtleInterface</plugin>
+                <param name="port">/dev/tty/ACM0</param>
+            </hardware> 
+        </xacro:unless> -->
+
+        <!-- ROS2_control Common Interfaces-->
         <joint name="left_wheel_joint">
             <command_interface name="velocity">
-                <param name="min">-10</param>
-                <param name="max">10</param>
+                <param name="min">-0.25</param>
+                <param name="max">0.25</param>
             </command_interface>
             <state_interface name="velocity"/>
             <state_interface name="position"/>
         </joint>
         <joint name="right_wheel_joint">
             <command_interface name="velocity">
-                <param name="min">-10</param>
-                <param name="max">10</param>
+                <param name="min">-0.25</param>
+                <param name="max">0.25</param>
             </command_interface>
             <state_interface name="velocity"/>
             <state_interface name="position"/>

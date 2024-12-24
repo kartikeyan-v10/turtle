@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20240806-1103-Experimental"
+	Name="ubuntu"
+	Generator="ctest-3.25.1"
+	CompilerName="/usr/bin/c++"
+	CompilerVersion="11.4.0"
+	OSName="Linux"
+	Hostname="ubuntu"
+	OSRelease="6.5.0-45-generic"
+	OSVersion="#45~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Mon Jul 15 16:40:02 UTC 2"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="AuthenticAMD"
+	VendorID="Advanced Micro Devices"
+	FamilyID="23"
+	ModelID="96"
+	ProcessorCacheSize="512"
+	NumberOfLogicalCPU="16"
+	NumberOfPhysicalCPU="8"
+	TotalVirtualMemory="2047"
+	TotalPhysicalMemory="23386"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="1400"
+	>
+	<Testing>
+		<StartDateTime>Aug 06 16:49 IST</StartDateTime>
+		<StartTestTime>1722943189</StartTestTime>
+		<TestList/>
+		<EndDateTime>Aug 06 16:49 IST</EndDateTime>
+		<EndTestTime>1722943190</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>
